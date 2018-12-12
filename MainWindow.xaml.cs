@@ -27,6 +27,7 @@ namespace serialCommunication
             InitializeComponent();
             this.serial = new SerialPort(portName: $"COM9", baudRate: 9600, parity: Parity.None, dataBits: 8, stopBits: StopBits.One);
             this.serial.Encoding = Encoding.UTF8;
+            var f = new Random();
             
             
         }
